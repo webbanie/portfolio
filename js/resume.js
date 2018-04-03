@@ -65,14 +65,6 @@
         margin:0,
         video:true,
         nav:true,
-        /*responsive:{
-            480:{
-                items:2
-            },
-            600:{
-                items:4
-            }
-        }*/
     })
 
 
