@@ -159,6 +159,7 @@ transform:rotate(1deg);
     padding: 0 6px 15px !important;
     border: 1px;
     //border-radius: 20px;
+    margin: 0;
 }
 .owl-carousel .owl-nav button{
 	position: absolute;
@@ -167,9 +168,10 @@ transform:rotate(1deg);
     height: 100%;
     background-color: #ffffff69 !important;
     margin: 0;
+    height: 95.7%;
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
-    background-color: black !important;
+    background-color: #00000021 !important;
 }
 .owl-carousel .owl-nav button.owl-next{
 	right: 0;
