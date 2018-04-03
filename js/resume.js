@@ -58,7 +58,7 @@
         });
     };
 
-   $('#video .owl-carousel').owlCarousel({
+   $('#video .owl-carousel, #photo .owl-carousel').owlCarousel({
         items:1,
         merge:true,
         loop:true,
