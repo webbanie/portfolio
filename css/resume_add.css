@@ -258,6 +258,9 @@ nav>a{
     font-size: 1.5rem;
     margin: auto;
     }
+    footer p{
+    font-size: 0.8rem;
+    }
 }
 
 /*.img-bg {
