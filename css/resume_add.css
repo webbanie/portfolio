@@ -64,7 +64,7 @@ background: #ff0040;
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
     color: #fcbbaf;
 }
-#home{
+#home, footer{
 background-image: url(../img/bg.jpg);
 background-size: 100%;
 //background-repeat-y: no-repeat;
@@ -182,6 +182,16 @@ transform:rotate(1deg);
 }
 .owl-theme .owl-dots .owl-dot span {
     background: #938093;
+}
+footer p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    color: white;
+}
+
+#photo .col {
+    padding-bottom: 15px;
 }
 
 
