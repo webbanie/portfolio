@@ -142,10 +142,10 @@ transform:rotate(1deg);
 .owl-carousel iframe{
     min-height: 350px;
 }
-.owl-carousel .item img, iframe{
+.owl-carousel .item img{
     filter: grayscale(75%);
 }
-.owl-carousel .item img:hover, iframe:hover {
+.owl-carousel .item img:hover{
     filter: grayscale(0);
 }
 .owl-nav {
