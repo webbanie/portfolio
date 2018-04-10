@@ -31,6 +31,7 @@
     <link href="css/resume.css" rel="stylesheet">
     <link href="css/resume_add.css" rel="stylesheet">
     <link href="css/ekko-lightbox.css" rel="stylesheet">
+    <link href="dist/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -66,6 +67,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#photo">Photo Editing</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#footer">Credits</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -77,28 +81,6 @@
         <div class="my-auto text-center">
           <h1 class="mb-0">Stéphanie Pires<br><span>Portfolio</span></h1>
 
-          <div class="subheading">
-            <a href="mailto:stephanieepir@gmail.com">stephanieepir@gmail.com</a>
-            <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-              <a href="https://www.instagram.com/fannie_webb/" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/webbanie" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            </ul>
-          </div>
-
         </div>
       </section>
 
@@ -108,72 +90,47 @@
         <div class="my-auto">
 
           <div class="owl-carousel owl-theme">
-            <div class="item bg12">
-              <a href="https://www.pariskinshasaexpress.com/fr/" target="_blank">
+            <div class="item" v-for="item in items" v-bind:style='{ backgroundImage: "url(img/" + item.image + ".jpg)", }'>
+              <a v-bind:href="item.link" target="_blank">
                 <div class="item-text">
-                  <h3 class="pair text-center" style="">Paris Kinshasa Express</h3>
-                  <!--<h4>Franco-Congolese Rumba </h4>-->
+                  <h3 class="pair text-center" style="">{{ item.title }}</h3>
 
-                  <p class="text-summary">The PKE collective brings together a dozen artists (France, Congo, Togo, Japan), old singers of the Congolese scene or from the new generation.
-                  <br>Revisiting the Congolese music, these explorer-ambiancers agree to ring together a modern and mixed rumba, texts combining derision and gravity, in Lingala and French.</p>
+                  <p class="text-summary">{{ item.descriptive }}
+                    <br>{{ item.descriptive_2 }}</p>
 
                   <p class="click-me">Click to visit</p>
                 </div>
 
-                <img src="img/site002.jpg">
-                <!--<h3 class="pair text-center" style="">Paris Kinshasa Express</h3>-->
-              </a>
-            </div>
-
-            <div class="my-auto item">
-              <a href="http://etudesetchantiers.org/" target="_blank">
-
-                <div class="item-text">
-                  <h3>Etudes et Chantiers</h3>
-                  <p>Click to visit</p>
-                </div>
-
-                <img src="img/site003.jpg">
+                <img v-bind:src="'img/' + item.image + '.jpg'">
 
               </a>
             </div>
-            
-            <div class="item"> 
-              <a href="http://banlieues-creatives.org/" target="_blank">
-                <h4>Banlieues-Creative</h4>
-                <img src="img/site001.jpg">
-              </a>
-            </div>
-            <div class="item">
-              <a href="https://webbanie.github.io/allonz-enfants/" target="_blank">
-                <img src="img/site004.jpg">
-                <h4>Allonz enfants</h4>
-              </a>
-            </div>
-
           </div>
 
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="video"><h2 class="mb-5">Video Production</h2>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="video">
+
+        <h2 class="mb-5"><em style="font-style: normal;">Video Production</em></h2>
+
         <div class="my-auto">
           
           <div class="owl-carousel owl-theme video-list">
               <div>
-                <iframe class="col-md-12" src="https://player.vimeo.com/video/112937399?color=fff&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe class="col-md-12" src="https://player.vimeo.com/video/112937399?color=fff&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="width:  100%;min-height:  418px;background-color: white;padding: 16px;"></iframe>
               </div>
 
               <div>
-                <iframe class="col-md-12" src="https://player.vimeo.com/video/142479765?color=fff&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe class="col-md-12" src="https://player.vimeo.com/video/142479765?color=fff&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="width:  100%;min-height:  418px;background-color: white;padding: 16px;"></iframe>
               </div>
 
               <div>
-                <iframe class="col-md-12" src="https://player.vimeo.com/video/169709277?color=fff&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe class="col-md-12" src="https://player.vimeo.com/video/169709277?color=fff&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="width:  100%;min-height:  418px;background-color: white;padding: 16px;"></iframe>
               </div>
 
               <div>
-                <iframe class="col-md-12" src="https://player.vimeo.com/video/112261007?color=fff&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe class="col-md-12" src="https://player.vimeo.com/video/112261007?color=fff&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="width:  100%;min-height:  418px;background-color: white;padding: 16px;"></iframe>
               </div>
     
           </div>
@@ -182,11 +139,13 @@
 
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="photo"><h2 class="mb-5">Photo Editing</h2>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="photo">
+        <h2 class="mb-5"><em style="font-style: normal;">Photo Editing</em></h2>
+
         <div class="my-auto">
 
-          <div class="owl-carousel owl-theme photo-list">
-              <div>
+          <div class="owl-carousel owl-theme photo-list text-center">
+              <div class="text-center">
                 <img src="img/467591_3697930562739_1324664097_o.jpg" class="img-fluid">
               </div>
                 
@@ -210,9 +169,29 @@
 
       </section>
 
-      <footer class="">
+      <footer class="text-center" id="footer">
+          <div class="subheading">
+            <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/fannie_webb/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/webbanie" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            </ul>
+          </div>
 
-        <p class="text-center">Tous droits réservés 2018 - Site développé par Stéphanie Pires</p>
+        <p style="background-color: white;padding-top: .7rem;">All rights reserved 2018 - Site developed by Stéphanie Pires.</p>
 
       </footer>
 
@@ -222,12 +201,15 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="assets/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.js"></script>
+    <script src="dist/jquery.mb.YTPlayer.js"></script>
 
   </body>
 
