@@ -68,7 +68,7 @@
       },
       { 
         title: "Allonz enfants de la balle",
-        descriptive: "Ici toutes les règles des activités",
+        descriptive: "",
         image : 'site004',
         link : 'https://webbanie.github.io/allonz-enfants/',
       },
