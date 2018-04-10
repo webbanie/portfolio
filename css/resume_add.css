@@ -147,16 +147,9 @@ em{
 }
 .owl-carousel .item{
     border: 1px solid rgba(43, 51, 38, 0.08);
-    //background-color: white;
-    padding: 3%;
     padding-bottom: 1%;
     color: black !important;
     text-decoration: none;
-    -webkit-transition-duration: 4s;
-    -webkit-transition-timing-function: ease-in-out;
-    transition-property: background-color;
-    transition-duration: 4s;
-    transition-timing-function: ease-in-out;
     }
 .owl-carousel .owl-item .item-text {
     //float: right;
@@ -258,7 +251,7 @@ footer p {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 0;
-    color: white;
+    color: black;
 }
 footer .list-social-icons a {
     color: #faf9f9;
