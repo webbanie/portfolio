@@ -68,7 +68,7 @@
       },
       { 
         title: "Allonz enfants de la balle",
-        descriptive: "",
+        descriptive: "Ici toutes les règles des activités",
         image : 'site004',
         link : 'https://webbanie.github.io/allonz-enfants/',
       },
@@ -107,10 +107,20 @@
         items:3,
         merge:true,
         loop:true,
-        margin:0,
+        margin:10,
         nav:true,
         dots:false,
     });
+
+
+  var iframe = $('iframe');
+  var player = new Vimeo.Player(iframe);
+
+
+  $('.owl-carousel .owl-nav button').click(function() {
+    //alert('stoped');
+    player.off('play');
+  });
 
 
 
