@@ -124,7 +124,7 @@ min-height: 100%;
 	font-weight: 100;
 }
 section>.my-auto{
-background-color: #540643;
+background-color: #806b7d;
     padding: 10px;
 }
 
@@ -217,7 +217,7 @@ em{
 }
 ///////////1_1CAROUSEL_nav/////////////
 .owl-theme .owl-nav {
-    margin-top: 0;
+    margin-top: 0 !important;
     font-size: 5rem;
 }
 .owl-theme .owl-nav{
