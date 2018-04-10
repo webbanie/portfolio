@@ -15,11 +15,9 @@ nav>a{
 #sideNav .navbar-collapse{
     margin: 15%;
 }
-
-
 }
 
-
+/*--html--*/
 html{
     padding: 0 !important;
     margin: 0 !important;
@@ -63,12 +61,12 @@ color: #938093;
 h2 {
     font-size: 2rem;
     padding-left: 20px;
-    font-weight: 100; //500;
+    font-weight: 100;
     border-bottom: 1px solid;
     border-color: #fe9f7a;
 }
 #home>div, #home h1, .navbar-dark .navbar-nav .nav-link{
-    color: #580d48; //#907382; //#cdcccc;
+    color: #580d48; 
 }
 a:hover, .fa-stack:hover{
     color: #fcbbaf;
@@ -77,7 +75,7 @@ a:hover, .fa-stack:hover{
     color: #938093
 }
 .bg-primary {
-    background-color: #faf9f9 !important; // #828282 #e5e5e5
+    background-color: #faf9f9 !important;
 }
 .bg-tertiary{
 background: #ff0040;
@@ -128,8 +126,7 @@ background-color: #806b7d;
     padding: 10px;
 }
 
-///////////1_CAROUSEL/////////////
-
+/*--CAROUSEL--*/
 .owl-carousel .owl-stage-outer, .owl-carousel .owl-stage{
     height: 100%;
     //padding: 50px 0;
@@ -141,7 +138,7 @@ em{
     padding: 0 50px;
 }
 
-///////////1_1CAROUSEL_items/////////////
+/*--CAROUSEL_items--*/
 .owl-carousel .owl-item{
     background-color: #f2f3e3 !important;
 }
@@ -215,7 +212,8 @@ em{
     padding: 12px;
     background-color: white;
 }
-///////////1_1CAROUSEL_nav/////////////
+
+/*--CAROUSEL_nav--*/
 .owl-theme .owl-nav {
     margin-top: 0 !important;
     font-size: 5rem;
@@ -249,10 +247,13 @@ em{
 .owl-carousel .owl-nav button.owl-prev{
 	left: 0;
 }
-///////////1_2CAROUSEL_videos/////////////
-iframe{
-    min-height: 418px !important;
-///////////footer_/////////////
+
+/*--photo--*/
+#photo .col {
+    padding-bottom: 15px;
+}
+
+/*--footer--*/
 footer p {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -268,14 +269,10 @@ footer .fa-inverse {
 footer .list-inline-item{
     padding: 20px;
 }
-///////////_/////////////
-#photo .col {
-    padding-bottom: 15px;
-}
-
-/////////////////media///////
 
 
+
+/*--media--*/
 
 @media (max-width: 992px){
     body {
@@ -289,16 +286,6 @@ footer .list-inline-item{
     section>h2 {
     margin-top: 0 !important;
     }
-    /*.owl-carousel .owl-item .item-text{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-    }
-    .owl-carousel .owl-item .item-text p{
-        background-color: #ffffffe8;
-    position: absolute;
-    top: 43%;
-    text-align: center;}*/
 }
 
 @media (max-width: 768px){
