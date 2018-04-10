@@ -39,32 +39,30 @@
     target: '#sideNav'
   });
 
-  // Owl-carousel
-   if($(window).width() > 768){
-      $("#websites .owl-carousel").owlCarousel({
-        loop:true,
-        margin:15,
-        nav:true,
-        items :3, 
-        responsiveClass:true,  
-      });
-    }else{
-      $("#websites .owl-carousel").owlCarousel({
-        loop:true,
-        margin:0,
-        nav:true,
-        items :1, 
-        responsiveClass:true,   
-        });
-    };
+  $('.owl-carousel .item').on( "mouseenter", function() {
+    $(this).css( "background-color", "#c9b5c47a" );
+    $('.item-text .text-summary').css({
+     "background-color": "#c9b5c47a",
+     "color": "white" });
+    $('.item-text .click-me').show();
+  }).on( "mouseleave", function() {
+    $(this).css( "background-color", "initial" );
+    $('.item-text .text-summary').css({
+     "background-color": "initial",
+     "color": "black" });
+    $('.item-text .click-me').hide();
+  });
 
-   $('#video .owl-carousel, #photo .owl-carousel').owlCarousel({
+
+  // Owl-carousel
+   $('#video .owl-carousel, #photo .owl-carousel, #websites .owl-carousel').owlCarousel({
         items:1,
         merge:true,
         loop:true,
         margin:0,
         video:true,
         nav:true,
+        dots:false,
     })
 
 
