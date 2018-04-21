@@ -103,15 +103,38 @@
         dots:false,
     });
 
-   $('#photo .owl-carousel').owlCarousel({
+
+
+   if($(window).width() > 1300){
+    $('#photo .owl-carousel').owlCarousel({
         items:3,
         merge:true,
         loop:true,
         margin:10,
         nav:true,
         dots:false,
-    });
-
+      });
+    }else{
+      if($(window).width() > 768){
+        $('#photo .owl-carousel').owlCarousel({
+          items:2,
+          merge:true,
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:false,
+        });
+      }else{
+        $('#photo .owl-carousel').owlCarousel({
+          items:1,
+          merge:true,
+        loop:true,
+        margin:0,
+        nav:true,
+        dots:false,
+        });
+      };
+    };
 
   var iframe = $('iframe');
   var player = new Vimeo.Player(iframe);
