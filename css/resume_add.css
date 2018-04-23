@@ -223,6 +223,7 @@ em{
     margin: 0;
     height: 100%;
     width: 3%;
+    font-size: xx-large;
 }
 .owl-carousel .owl-nav button{
 	position: absolute;
@@ -280,7 +281,7 @@ footer p {
 @media (max-width: 1300px){
     .owl-carousel .owl-item .item-text p {
     margin: 0 8% 0 5%;
-    line-height: 1.4rem;
+    line-height: 1.2rem;
     }
 }
 
@@ -290,6 +291,7 @@ footer p {
     }
     h3{
     font-size: 1.3rem;
+    line-height: 3.2;
     }
     section>h2 {
     margin-top: 0 !important;
@@ -327,27 +329,50 @@ footer p {
     .owl-carousel .owl-item img {
     width: 100%;
     }
+    #websites .owl-carousel .owl-item img {
+    visibility: hidden; 
+    }
     .owl-carousel .item {
-    background-image: none !important;
+    background-size: contain;
     }
     .owl-carousel .owl-item .item-text {
     width: 100%;
     top: 3%;}
     .owl-carousel .owl-item .item-text p {
-    margin: 0;
+    //margin: 0;
     padding: 10px 45px;
     text-align: justify;
     font-size: 15px;
     line-height: 26px;
+    font-weight: 500;color: white;background-color: #0000006b !important;
+    }
+    .owl-carousel .owl-item .item-text p.click-me {
+    display: inline;
+    background-color: transparent !important;
+    font-weight: 800;
     }
 }
 
 @media (max-width: 579px){
+    #home div>h1 {
+    font-size: 3rem;
+    line-height: 3.8rem;
+    }
     .owl-carousel iframe{
-        min-height: 280px;
+        min-height: 280px !important;
+    }
+    .owl-carousel .owl-item .item-text p {
+    font-size: 13px;
+    line-height: 15px;
+    }
+    .owl-theme .owl-nav button.owl-prev, .owl-theme .owl-nav button.owl-next {
+    width: 10%;
+    }
+    em {
+    padding: 0 18px;
     }
     h2 {
-    font-size: 1rem;
+    font-size: 1.4rem;;
     }
     #home{
     height: 375px;
