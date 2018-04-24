@@ -291,7 +291,7 @@ footer p {
     }
     h3{
     font-size: 1.3rem;
-    line-height: 3.2;
+    line-height: 2.2;
     }
     section>h2 {
     margin-top: 0 !important;
@@ -340,7 +340,7 @@ footer p {
     top: 3%;}
     .owl-carousel .owl-item .item-text p {
     //margin: 0;
-    padding: 10px 45px;
+    padding: 8px 23px;
     text-align: justify;
     font-size: 15px;
     line-height: 26px;
@@ -362,8 +362,9 @@ footer p {
         min-height: 280px !important;
     }
     .owl-carousel .owl-item .item-text p {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 15px;
+    padding: 0 12px !important;
     }
     .owl-theme .owl-nav button.owl-prev, .owl-theme .owl-nav button.owl-next {
     width: 10%;
