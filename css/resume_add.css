@@ -16,7 +16,9 @@ nav>a{
     margin: 15%;
     padding-top: 40%;
 }
-}
+
+
+} //end media
 
 /*--html--*/
 html{
@@ -25,6 +27,7 @@ html{
 }
 html, body{
     overflow-x: hidden; 
+    line-height: 0;
 }
 br{
    margin-top: 10px;
@@ -39,6 +42,14 @@ h6 {
 }
 h1{
 	font-weight: 200;
+}
+/*.btn-primary, .btn-primary:hover{
+    background-color: transparent;
+    border-color: transparent;
+}*/
+.btn {
+    padding: 0; 
+    color: black;
 }
 nav h1{
 	font-size: 2rem;
@@ -273,7 +284,16 @@ footer p {
 .subheading .list-inline-item{
     padding: 10px;
 }
-
+/*--modal--*/
+.modal {
+    padding-right: 0 !important;}
+.modal-dialog {
+    max-width: 50%;
+    margin: 1.75rem auto;
+}
+.modal img {
+    width: 100%;
+}
 
 
 /*--media--*/
@@ -282,6 +302,8 @@ footer p {
     margin: 0 8% 0 5%;
     line-height: 1.2rem;
     }
+    .modal-dialog {
+    max-width: 70%;}
 }
 
 @media (max-width: 992px){
@@ -307,6 +329,7 @@ footer p {
     footer .empty {
         display: none;
     }
+
 }
 
 @media (max-width: 768px){
@@ -384,4 +407,11 @@ footer p {
     footer p{
     font-size: 0.8rem;
     }
+    .modal-open .modal {
+    padding-top: 20%;
+    }
+}
+
+@media (min-width: 768px){
+
 }
