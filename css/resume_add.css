@@ -262,6 +262,11 @@ em{
     padding-bottom: 15px;
 }
 
+/*--other--*/
+#other div iframe{
+    width: 100%;
+}
+
 /*--footer--*/
 footer .subheading {
     display: none;
