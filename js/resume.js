@@ -46,6 +46,12 @@
   data: {
     items: [
       { 
+        title: "Paris by Night",
+        descriptive: "Descriptif",
+        image : 'site004',
+        link : '#',
+      },
+      { 
         title: "Etudes et Chantiers",
         descriptive: "Études et Chantiers is a French non-profit organization created in 1962 that develops, through its regional associations (AREC), volunteer projects, in France and abroad, as well as projects to fight against exclusions.",
         descriptive_2: "Études et Chantiers has developed European and international partnerships with 123 associations in 73 countries. She is a member of several French, European and international associations.",
@@ -69,7 +75,7 @@
       { 
         title: "Allonz enfants de la balle",
         descriptive: "Ici toutes les règles des activités",
-        image : 'site004',
+        image : 'site005',
         link : 'https://webbanie.github.io/allonz-enfants/',
       },
     ]
@@ -94,7 +100,7 @@
   };
 
   // Owl-carousel
-   $('#video .owl-carousel, #websites .owl-carousel').owlCarousel({
+   $('#video .owl-carousel, #websites .owl-carousel, #other .owl-carousel').owlCarousel({
         items:1,
         merge:true,
         loop:true,
