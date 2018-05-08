@@ -47,7 +47,7 @@
     items: [
       { 
         title: "Paris by Night",
-        descriptive: "Descriptif",
+        descriptive: "",
         image : 'site004',
         link : '#',
       },
