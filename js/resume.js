@@ -74,7 +74,7 @@
       },
       { 
         title: "Allonz enfants de la balle",
-        descriptive: "Ici toutes les règles des activités",
+        descriptive: "Un Kit pédagogique pour partager le plaisir du football à tout âge, pour analyser et dépasser les excès des «ultras» et des «tifosis et pour que le FOOT reste le jeu le plus populaire et le plus aimé, et pourquoi pas le plus «aimable».",
         image : 'site005',
         link : 'https://webbanie.github.io/allonz-enfants/',
       },
