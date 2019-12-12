@@ -369,7 +369,7 @@ footer p {
     background-size: contain;
     }
     .owl-carousel .owl-item .item-text {
-    width: 70%;
+    width: 100%;
     top: 3%;}
     .owl-carousel .owl-item .item-text p {
     //margin: 0;
