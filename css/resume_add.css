@@ -369,7 +369,7 @@ footer p {
     background-size: contain;
     }
     .owl-carousel .owl-item .item-text {
-    width: 100%;
+    width: 70%;
     top: 3%;}
     .owl-carousel .owl-item .item-text p {
     //margin: 0;
@@ -377,7 +377,7 @@ footer p {
     text-align: justify;
     font-size: 15px;
     line-height: 26px;
-    font-weight: 500;color: white;background-color: #0000006b !important;
+    font-weight: 500;color: white;background-color: #806b7de8 !important;
     }
     .owl-carousel .owl-item .item-text p.click-me {
     display: inline;
