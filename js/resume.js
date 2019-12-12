@@ -47,7 +47,7 @@
     items: [
       { 
         title: "Paris by Night",
-        descriptive: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis elit eget lacinia congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec dictum varius libero quis aliquam.",
+        descriptive: "",
         image : 'site004',
         link : '#',
       },
